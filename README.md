@@ -9,6 +9,6 @@
 
 ## Description
 
-Create a React-based portfolio to showcase my web development projects and skills, making it easy for potential collaborators and employers to explore my work.
+Created a React-based portfolio to showcase my web development projects and skills, making it easy for potential collaborators and employers to explore my work.
 
 ## Thank You!
