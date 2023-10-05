@@ -8,6 +8,7 @@ import {
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
+import Resume from '../assets/ShwetaMishra_fs_ghc23.pdf';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -38,11 +39,6 @@ const Navbar = () => {
                 <li>
                     <Link to='work' smooth={true} duration={500}>
                         Work
-                    </Link>
-                </li>
-                <li>
-                    <Link to='contact' smooth={true} duration={500}>
-                        Contact
                     </Link>
                 </li>
             </ul>
@@ -81,12 +77,6 @@ const Navbar = () => {
                         Work
                     </Link>
                 </li>
-                <li className='py-6 text-4xl'>
-                    {' '}
-                    <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
-                        Contact
-                    </Link>
-                </li>
             </ul>
             {/* Social icons */}
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
@@ -111,9 +101,6 @@ const Navbar = () => {
                         <a
                             className='flex justify-between items-center w-full text-gray-300'
                             href='mailto:smshweta1196@gmail.com'
-
-
-
                         >
                             Email <HiOutlineMail size={30} />
                         </a>
@@ -121,7 +108,7 @@ const Navbar = () => {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
                         <a
                             className='flex justify-between items-center w-full text-gray-300'
-                            href='/'
+                            href={Resume} download="Shweta_Mishra_Resume"
                         >
                             Resume <BsFillPersonLinesFill size={30} />
                         </a>
